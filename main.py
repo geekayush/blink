@@ -6,7 +6,6 @@ import numpy as np
 import cv2
 import time
 import random
-import pyttsx3
 import autocomplete
 import subprocess
 import os.path
@@ -296,7 +295,6 @@ rightEyeClosedStart = False
 rightEyeClosedStartTime = 0
 rightFirst = 0
 
-engine = pyttsx3.init()
 autocomplete.load()
 
 NUM_ROWS_OF_LETTERS = 5
@@ -686,9 +684,7 @@ class Ui_MainWindow(object):
         self.pushSentenceToBody()
         global wholeText
         reciteLine = wholeText.replace("<br>", "")
-        engine.say(reciteLine)
-        engine.runAndWait()
-        print("Recited")
+        subprocess.call(["python3", "speak.py", reciteLine])
         return 0
         # engine = pyttsx3.init()
         # engine.setProperty('rate', 125)
