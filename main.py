@@ -621,7 +621,7 @@ class Ui_MainWindow(object):
                         "MainWindow", letRowNorm[0], None))
                     for e in self.buts[0]:
                         e.setStyleSheet(
-                            'QPushButton {font-weight:bold;color:red;}')
+                            'QPushButton {color:red;}')
                 elif letRowCount == 6:
                     self.textBrowser.setHtml(_translate(
                         "MainWindow", letRowNorm[0], None))
@@ -629,7 +629,7 @@ class Ui_MainWindow(object):
                         e.setStyleSheet('QPushButton {font-weight:normal;}')
                     for e in self.buts[1]:
                         e.setStyleSheet(
-                            'QPushButton {font-weight:bold;color:red;} QTextBrowser {font-weight:bold;color:red;}')
+                            'QPushButton {color:red;} QTextBrowser {color:red;}')
             else:
                 letColCount += 1
                 if letRowCount < 5 and letColCount == len(letColBold[letRowCount]):
@@ -646,7 +646,7 @@ class Ui_MainWindow(object):
                         for j in range(len(self.buts[i])):
                             if j == letColCount and i+NUM_ROWS_OF_LETTERS == letRowCount:
                                 self.buts[i][j].setStyleSheet(
-                                    'QPushButton {font-weight:bold;color:red;} QTextBrowser {font-weight:bold;color:red;}')
+                                    'QPushButton {color:red;} QTextBrowser {color:red;}')
                             else:
                                 self.buts[i][j].setStyleSheet(
                                     'QPushButton {font-weight:normal;} QTextBrowser {font-weight:normal;}')
