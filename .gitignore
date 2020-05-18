@@ -1,0 +1,5 @@
+config.py
+build
+dist
+.DS_STORE
+__pycache__/

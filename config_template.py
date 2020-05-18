@@ -1,0 +1,6 @@
+account_sid = ""
+auth_token = ""
+sms_to = ""
+sms_from = ""
+whatsapp_to = ""
+whatsapp_from = ""
