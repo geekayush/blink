@@ -276,10 +276,9 @@ except AttributeError:
 
 # Face Cascades
 face_cascade = cv2.CascadeClassifier(
-    'haarCascades/haarcascade_frontalface_default.xml')
+    'haarCascades/haarcascade_face.xml')
 eye_cascade = cv2.CascadeClassifier(
-    'haarCascades/haarcascade_eye_tree_eyeglasses.xml')
-# pupil_cascade = cv2.CascadeClassifier('haarcascade_eye2.xml')
+    'haarCascades/haarcascade_eye.xml')
 
 # Number signifies camera
 cap = cv2.VideoCapture(0)
