@@ -380,6 +380,7 @@ def tick():
                     rightEyeClosedStart = True
                 elif time.time()-rightEyeClosedStartTime > 1.5 and rightFirst == 0:
                     rightFirst = 1
+                    ui.delLet()
             # Right Wink
             elif len(leftEye) == 0 and len(rightEye) == 1:
                 if leftEyeClosedStart == False:
@@ -388,6 +389,7 @@ def tick():
                     leftEyeClosedStart = True
                 elif time.time()-leftEyeClosedStartTime > 1.5 and leftFirst == 0:
                     leftFirst = 1
+                    ui.getPredWord()
             # Eyes Open
             elif len(leftEye) == 1 and len(rightEye) == 1:
                 bothFirst = 0
