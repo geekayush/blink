@@ -1,6 +1,6 @@
 altgraph==0.17
 autocomplete==0.0.104
-bottle==0.12.18
+bottle==0.12.19
 certifi==2020.4.5.1
 chardet==3.0.4
 idna==2.9
